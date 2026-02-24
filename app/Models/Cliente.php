@@ -11,10 +11,10 @@ class Cliente extends Model
 
     protected $fillable = [
         'nome',
-        'endereço',
+        'endereco',
         'telefone',
         'cpf',
-        'e-mail',
+        'email',
         'senha'
     ];
 }

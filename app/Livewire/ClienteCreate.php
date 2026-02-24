@@ -8,7 +8,7 @@ use Livewire\Component;
 class ClienteCreate extends Component
 {
     public $nome;
-    public $endereço;
+    public $endereco;
     public $telefone;
     public $cpf;
     public $email;
@@ -17,7 +17,7 @@ class ClienteCreate extends Component
     public function store(){
         Cliente::create([
             'nome' => $this->nome,
-            'endereço' => $this->endereço,
+            'endereco' => $this->endereco,
             'telefone' => $this->telefone,
             'cpf' => $this->cpf,
             'email' => $this->email,

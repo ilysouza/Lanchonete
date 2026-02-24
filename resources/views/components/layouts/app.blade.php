@@ -10,19 +10,23 @@
     
         @livewireStyles
     </head>
-    <body>
+    <body class="bg-info-subtle">
         
-        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <nav class="navbar sticky-top navbar-expand-lg bg-primary-subtle border-bottom border-body" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="">Gerenciador de Tarefas</a>
+                <a class="navbar-brand text-primary-emphasis" href="">Lanchonete</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="{{  route('tarefa.index')  }}">Tarefas</a>
-                        <a class="nav-link" href="{{  route('tarefa.create')  }}">Nova Tarefa</a>
+                        <a class="nav-link text-primary-emphasis text-opacity-50" href="{{  route('produto.create')  }}">Criar Produto</a>
+                        <a class="nav-link text-primary-emphasis text-opacity-50" href="{{  route('cliente.create')  }}">Criar cliente</a>
+                        <a class="nav-link text-primary-emphasis text-opacity-50" href="{{  route('funcionario.create')  }}">Criar funcionários</a>
+                        <a class="nav-link text-primary-emphasis text-opacity-50" href="{{  route('funcionario.index')  }}">Funcionários</a>
+                        <a class="nav-link text-primary-emphasis text-opacity-50" href="{{  route('cliente.index')  }}">Clientes</a>
+                        <a class="nav-link text-primary-emphasis text-opacity-50" href="{{  route('produto.index')  }}">Produtos</a>
                     </div>
                 </div>
             </div>

@@ -12,7 +12,7 @@ class Funcionario extends Model
     protected $fillable = [
         'nome',
         'cpf',
-        'e-mail',
+        'email',
         'senha'
     ];
 }
