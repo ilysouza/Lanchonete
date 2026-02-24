@@ -7,6 +7,11 @@ use Livewire\Component;
 
 class ProdutoIndex extends Component
 {
+    public function delete($id)
+    {
+        Produto::find($id)->delete();
+        session()->flash('message', 'Produto deletado.');
+    }
     public function render()
     {
         $produtos = Produto::all();
