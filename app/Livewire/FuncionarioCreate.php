@@ -2,34 +2,30 @@
 
 namespace App\Livewire;
 
-use App\Models\Cliente;
+use App\Models\Funcionario;
 use Livewire\Component;
 
-class ClienteCreate extends Component
+class FuncionarioCreate extends Component
 {
     public $nome;
-    public $endereço;
-    public $telefone;
     public $cpf;
     public $email;
     public $senha;
 
     public function store(){
-        Cliente::create([
+        Funcionario::create([
             'nome' => $this->nome,
-            'endereço' => $this->endereço,
-            'telefone' => $this->telefone,
             'cpf' => $this->cpf,
             'email' => $this->email,
-            'senha' => $this->senha
+            'senha' => $this->senha,
+
         ]);
 
     session()->flash('success', 'Cadastrado');
-    return redirect()->route('cliente.index');
+    return redirect()->route('funcionario.index');
     }
-
     public function render()
     {
-        return view('livewire.cliente-create');
+        return view('livewire.funcionario-create');
     }
 }

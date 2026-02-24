@@ -2,12 +2,14 @@
 
 namespace App\Livewire;
 
+use App\Models\Cliente;
 use Livewire\Component;
 
 class ClienteIndex extends Component
 {
     public function render()
     {
-        return view('livewire.cliente-index');
+        $clientes = Cliente::all();
+        return view('livewire.cliente-index', compact('clientes'));
     }
 }
